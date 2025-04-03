@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ ul, ol,li{
+ list-style: none;
+
+}
+ 
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color:  #2B4A56;
+}
+ 
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+.fundo img{
+    height: 90vh;
+    width: 100vw;
+}
+
+.icons img{
+    width: 6vw;
+    height: -16vh;
+}
+
+.micro{
+
+}
