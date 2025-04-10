@@ -86,27 +86,28 @@ header{
     color: #FBF6E6;
 }
 
-.perfil{
-    height: 3vh;
-    width: 50vw;
+.perfil img{
+    margin-top: -10vh;
+    height: 30vh;
+    width: 20vw;
 }
 
 .nome h2{
-    margin-top: 5vh;
-    margin-left: 26vw;
+    margin-top: -23vh;
+    margin-left: 23vw;
     font-size: 4vh;
 }
 
 .nome h3{
     margin-top: 6vh;
-    margin-left: 26vw;
+    margin-left: 23vw;
     color: gray;
     font-size: 2.5vh;
 }
 
 ul {
     list-style-type: circle;
-    margin-left: 26vw;
+    margin-left: 23vw;
     font-size: 2.2vh;
 }
 
@@ -124,8 +125,8 @@ ul {
 }
 
 .nome2 h3{
-    margin-top: -13.8vh;
-    margin-left: 50vw;
+    margin-top: -18vh;
+    margin-left: 47vw;
 }
 
 .texto3{
@@ -150,6 +151,67 @@ ul {
 }
 
 .engrenagem img{
-    margin-top: 2vh;
-    margin-left: 87vw;
+    margin-top: 3vh;
+    margin-left: 86vw;
+}
+
+.menu img{
+    margin-top: -7vh;
+    margin-left: 93vw;
+}
+
+.destaque{
+    margin-top: -5vh;
+    margin-left: 23vw;
+}
+
+.destaque img{
+    height: 7vh;
+}
+
+.dados{
+    margin-top: -8vh;
+}
+
+.seguidores{
+    margin-left: 3vw;
+}
+
+.seguindo{
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+
+.post{
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+
+#publicar{
+    width: 15vh;
+    height: 5vh;
+    color: white;
+    background-color: #D95548;
+    margin-top: 3.5vh;
+    margin-left: 3vw;
+    font-size: 2.5vh;
+}
+#deletar{
+    width: 15vh;
+    height: 5vh;
+    color: white;
+    background-color: #D95548;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    font-size: 2.5vh;
+}
+
+.post1{
+    margin-top: -33vh;
+    margin-left: 23vw;
+}
+
+.post1 img{
+    height: 38vh;
+    width: 35vw;
 }
