@@ -1,3 +1,6 @@
+:root{
+    --imagem-fundo: url("./imgs/image-star.png");
+}
 *{
     padding: 0;
     margin:  0;
@@ -9,26 +12,39 @@ a{
 }
 
  ul, ol,li{
- list-style: none;
+    list-style-type:disc;
 
+}
+html{
+    height: 100vh;
+    width: 100%;
 }
  
 body{
     height: 100%;
     width: 100%;
-    /* display: flex; */
+  
     background-color: white;
     /* justify-content: space-between; */
+   
 }
  
 header{
-    height: 13vh;
+    height: 13%;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    background-image: var(--imagem-fundo);
+    /* justify-content: space-between;
+    align-items: center; */
+    grid-template-columns: 0.1fr 1fr;
+    /* background-color: aquamarine; */
 }
 
+main{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    height: 100%;
+}
 .fundo img{
     height: 100%;
     width: 100%;
@@ -36,21 +52,26 @@ header{
 }
 .fundo {
     position: static;
-    display: flex;
+    display: grid;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .icons img{
     width: 6vw;
     height: 10vh;
+    margin-top: 2vh;
 }
 .icons{
-    position: absolute;
+    /* position: absolute; */
+    height: 15vh;
     display: flex;
+   
 }
 
 .ballet{
-    margin-left: 55vw;
+    margin-left: 45vw;
     
 }
 
@@ -69,12 +90,11 @@ header{
 
 .logo{
     height: 25vh;
-    margin-top: 13vh;
     margin-left: 2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .logo img{
@@ -86,37 +106,49 @@ header{
     color: #FBF6E6;
 }
 
+.esquerdo{
+    height: 100%;
+}
+.direito{
+    /* background-color: bisque; */
+    width: 100%;
+    display: grid;
+}
 .perfil img{
-    margin-top: -10vh;
+    margin-top: 1vh;
     height: 30vh;
     width: 20vw;
 }
-
+.nome{
+    
+    width: 60vw;
+}
 .nome h2{
-    margin-top: -23vh;
-    margin-left: 23vw;
+    margin-top: 10vh;
     font-size: 4vh;
 }
 
 .nome h3{
     margin-top: 6vh;
-    margin-left: 23vw;
+  
     color: gray;
     font-size: 2.5vh;
 }
 
 ul {
     list-style-type: circle;
-    margin-left: 23vw;
+   
     font-size: 2.2vh;
 }
 
 .texto1{
     margin-top: 3.6vh;
+    margin-left: 2vw;
 }
 
 .texto2{
     margin-top: 2vh;
+    margin-left: 2vw;
 }
 
 .nome2 {
@@ -125,44 +157,25 @@ ul {
 }
 
 .nome2 h3{
-    margin-top: -18vh;
-    margin-left: 47vw;
+    /* margin-top: 18vh; */
+   
 }
 
-.texto3{
-    margin-top: 3.6vh;
-    margin-left: 24vw;
-}
-
-.texto4{
-    margin-top: 2vh;
-    margin-left: 24vw;
-
-}
-
-.texto5{
-    margin-top: 2vh;
-    margin-left: 24vw;
-}
-
-.texto6{
-    margin-top: 2vh;
-    margin-left: 24vw;
-}
-
-.engrenagem img{
-    margin-top: 3vh;
-    margin-left: 86vw;
-}
-
-.menu img{
-    margin-top: -7vh;
-    margin-left: 93vw;
+.menu {
+    padding-top: 2vh;
+    margin-top: -80vh;
+    margin-left: 66vw;
+    /* background-color: #D95548; */
+    width: 12vw;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1.5Fr 1Fr ;
 }
 
 .destaque{
-    margin-top: -5vh;
-    margin-left: 23vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+   
 }
 
 .destaque img{
@@ -170,7 +183,8 @@ ul {
 }
 
 .dados{
-    margin-top: -8vh;
+    margin-top: 2vh;
+    width: 15vw;
 }
 
 .seguidores{
@@ -185,6 +199,7 @@ ul {
 .post{
     margin-top: 5vh;
     margin-left: 3vw;
+    width: 2vw;
 }
 
 #publicar{
@@ -196,6 +211,13 @@ ul {
     margin-left: 3vw;
     font-size: 2.5vh;
 }
+.publi{
+    width: 15vw;
+}
+
+.delet{
+    width: 15vw;
+}
 #deletar{
     width: 15vh;
     height: 5vh;
@@ -206,12 +228,27 @@ ul {
     font-size: 2.5vh;
 }
 
-.post1{
-    margin-top: -33vh;
-    margin-left: 23vw;
+.foto1{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 35vw;
+    border: solid 0.2vh grey;
+}
+.topo{
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+}
+.perfilP{
+    height: 6vh;
+    width: 4vw;
+    margin-top: 2vh;
 }
 
-.post1 img{
-    height: 38vh;
-    width: 35vw;
+.foto1 h2{
+    margin-top: 6vh;
+    font-family:Arial, Helvetica, sans-serif;
 }
+.foto1 h3{
+    font-family:Arial, Helvetica, sans-serif;
+    color: gray;
+}  
